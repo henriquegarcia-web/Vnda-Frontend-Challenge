@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  height: 90px;
+  width: 100%;
+  position: absolute;
+}
+
+.header .header__logo {
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header__logo a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+}
+
+.header .header__logo a h1:nth-of-type(1) {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.header .header__logo a h1:nth-of-type(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.header .header__logo a .header__logo__divisor {
+  background-color: black;
+  height: 30px;
+  width: 2px;
+  margin: 0 12px;
+}
+
+.header .header__menu {
+  width: 65%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header__menu li {
+  padding: 3px 6px;
+  margin: 0 3px;
+}
+
+.header .header__menu li a {
+  color: black;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.header .header__icons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 15%;
+}
+
+.header .header__icons .header__icons {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 8px;
+}
+
+.header .header__icons .header__icons .icon {
+  font-size: 20px;
+}
+
+.header .header__icons .header__icons .icon:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */
