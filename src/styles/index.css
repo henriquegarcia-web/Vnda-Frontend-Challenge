@@ -17,6 +17,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .container {
@@ -34,6 +38,11 @@ body {
   height: 90px;
   width: 100%;
   position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
 }
 
 .header .header__logo {
@@ -47,21 +56,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: black;
+  color: white;
+}
+
+.header .header__logo a h1 {
+  letter-spacing: 2px;
+  font-weight: 400;
 }
 
 .header .header__logo a h1:nth-of-type(1) {
   font-size: 36px;
-  font-weight: 400;
 }
 
 .header .header__logo a h1:nth-of-type(2) {
   font-size: 24px;
-  font-weight: 400;
 }
 
 .header .header__logo a .header__logo__divisor {
-  background-color: black;
+  background-color: white;
   height: 30px;
   width: 2px;
   margin: 0 12px;
@@ -77,15 +89,26 @@ body {
           justify-content: center;
 }
 
-.header .header__menu li {
-  padding: 3px 6px;
-  margin: 0 3px;
+.header .header__menu ul {
+  margin-top: 5px;
 }
 
-.header .header__menu li a {
-  color: black;
-  font-size: 15px;
+.header .header__menu ul li {
+  padding: 5px 6px;
+  margin: 0 3px;
+  border-bottom: 1px solid transparent;
+}
+
+.header .header__menu ul li a {
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.header .header__menu ul li:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 .header .header__icons {
@@ -106,10 +129,28 @@ body {
 }
 
 .header .header__icons .header__icons .icon {
+  color: white;
   font-size: 20px;
 }
 
 .header .header__icons .header__icons .icon:hover {
   cursor: pointer;
+}
+
+.main-banner {
+  background-image: url("/src/images/main_banner.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+
+.main-banner a .main-banner__gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(transparent));
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7), transparent);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=index.css.map */
