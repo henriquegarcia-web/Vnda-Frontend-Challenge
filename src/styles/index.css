@@ -23,9 +23,13 @@ body {
           flex-direction: column;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .flex {
@@ -143,7 +147,7 @@ body {
   background-size: cover;
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 900px;
 }
 
 .main-banner a .main-banner__gradient {
@@ -152,5 +156,127 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 900px;
+}
+
+.section .section__left_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  height: 100%;
+  padding: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section .section__left_container p:nth-of-type(1) {
+  font-size: 34px;
+  margin-bottom: 40px;
+}
+
+.section .section__left_container p:nth-of-type(2) {
+  width: 70%;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.section .section__left_container button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  padding: 15px 50px;
+}
+
+.section .section__right_container {
+  width: 45%;
+  height: 100%;
+}
+
+.about-us {
+  margin-bottom: 160px;
+}
+
+.about-us .about-us__left {
+  position: relative;
+}
+
+.about-us .about-us__left .about-us__left__background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1;
+  background-image: url("/src/images/about_us_banner.jpg");
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  opacity: 0.1;
+}
+
+.about-us .about-us__right {
+  position: relative;
+}
+
+.about-us .about-us__right .about-us__images img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-us .about-us__right .about-us__images.first {
+  background-color: blanchedalmond;
+  position: absolute;
+  width: 50%;
+  height: 440px;
+  right: 0;
+  top: 35%;
+}
+
+.about-us .about-us__right .about-us__images.second {
+  background-color: cadetblue;
+  position: absolute;
+  width: 60%;
+  height: 440px;
+  right: 40px;
+}
+
+.about-us .about-us__right .about-us__images.third {
+  background-color: chartreuse;
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  right: 100%;
+  top: 100%;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.store .store__right {
+  position: relative;
+}
+
+.store .store__right img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=index.css.map */
