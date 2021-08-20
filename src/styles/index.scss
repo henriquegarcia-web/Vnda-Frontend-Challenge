@@ -152,6 +152,7 @@ button:hover {
   display: flex;
   justify-content: center;
   height: 900px;
+  margin-bottom: 160px;
 
   .section__left_container {
     display: flex;
@@ -172,9 +173,19 @@ button:hover {
     }
 
     button {
+      background-color: $grey-blue;
+      color: white;
+      outline: 3px solid $grey-blue;
       width: fit-content;
       font-size: 20px;
+      letter-spacing: 1px;
       padding: 15px 50px;
+      transition: .2s;
+    }
+
+    button:hover {
+      background-color: transparent;
+      color: $grey-blue;
     }
   }
 
@@ -187,8 +198,6 @@ button:hover {
 // -------------- SOBRE NÓS (About Us)
 
 .about-us {
-  margin-bottom: 160px;
-
   .about-us__left {
     position: relative;
 
@@ -256,5 +265,141 @@ button:hover {
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+// -------------- COMPONENTE DE SHOWCASE
+
+.showcase {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 110px;
+
+  .showcase__container {
+    flex-direction: column;
+
+    .showcase__title {
+      padding: 20px 0;
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 30px;
+    }
+
+    .showcase__items {
+      display: flex;
+      position: relative;
+
+      .showcase__items__arrows {
+        justify-content: space-between;
+        position: absolute;
+        width: calc(100% + 60px);
+        top: 50%;
+        left: -30px;
+        transform: translateY(-50%);
+
+        img {
+          width: 40px;
+        }
+
+        img:hover {
+          cursor: pointer;
+        }
+
+        .showcase__items__arrows--left {
+          img {
+            transform: rotate(180deg);
+          }
+        }
+
+        .showcase__items__arrows--right {
+          img {
+            
+          }
+        }
+      }
+
+      .showcase__item {
+        width: 25%;
+        padding: 20px;
+
+        .showcase__item__category {
+          font-size: 22px;
+          padding: 20px 0;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .showcase__item__container {
+          .showcase__item__image {
+            background-color: cornflowerblue;
+            position: relative;
+            width: 100%;
+            height: 380px;
+
+            .showcase__item__image__flag {
+              position: absolute;
+              background-color: $grey-blue;
+              color: white;
+              top: 0;
+              margin: 10px;
+              padding: 10px 14px;
+            }
+
+            .showcase__item__image__price {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              padding: 20px;
+              font-size: 20px;
+            }
+          }
+  
+          .showcase__item__title {
+            // color: white;
+            letter-spacing: 1px;
+            font-size: 20px;
+            text-align: center;
+            margin: 16px 0;
+          }
+  
+          .showcase__item__buy_button {
+            text-align: center;
+
+            button {
+              background-color: transparent;
+              color: $grey-blue;
+              outline: 3px solid $grey-blue;
+              width: 99%;
+              font-size: 20px;
+              letter-spacing: 1px;
+              padding: 15px 50px;
+              transition: .2s;
+            }
+        
+            button:hover {
+              background-color: $grey-blue;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------------- BANNER DE TEXTO (Text Banner)
+
+.text-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+
+  .text-banner__text {
+    font-size: 34px;
+    width: calc(100% - 400px);
+    margin: 150px 200px;
+    text-align: center;
+    line-height: 1.5;
   }
 }
