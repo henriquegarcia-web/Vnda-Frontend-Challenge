@@ -1,8 +1,8 @@
 ### Vnda Frontend Challenge
 
 ###### Desafio para demonstração de habilidades.
-> **Desenvolvedor:** Henrique Pereira Garcia
-> **Data e hora de início:** 19/08/2021 às 21:50
+> **Desenvolvedor:** Henrique Pereira Garcia <br/>
+> **Data e hora de início:** 19/08/2021 às 21:50 <br/>
 > **Data e hora de término:** 
 
 #### Escopo:
