@@ -1,6 +1,8 @@
 (function init () {
   new Header().start(),
+  new Feature().start(),
   new Budget().start(),
+  new NewsLetter().start(),
   new Footer().start()
 })()
 
@@ -14,12 +16,17 @@ function Header() {
 
   this._menuManager = () => {
     const menuItems = document.querySelectorAll('.header__menu ul li a')
+    const headerIcons = document.querySelectorAll('.header__icons .header__icon')
 
     Array.from(menuItems).forEach(menus => menus.addEventListener('click', (clickedMenu) => {
       Array.from(menuItems).forEach((menus) => {
         menus.classList.remove('header__menu--selected')
       })
       clickedMenu.path[0].classList.add('header__menu--selected')
+    }))
+
+    Array.from(headerIcons).forEach(icons => icons.addEventListener('click', () => {
+      new PopUp().renderPopUp('alert', 'Desculpe! Está função não está ativa no momento')
     }))
   }
 
@@ -37,6 +44,37 @@ function Header() {
     })
   }
 
+}
+
+function Feature() {
+  const featurePlaySoundButton = document.querySelector('.feature .feature__left button')
+  const featureEngineSound = document.getElementById('feature__engine_sound')
+
+  this.start = () => {
+    this._startEngineSound()
+  }
+
+  this._startEngineSound = () => {
+    featureEngineSound.volume = 0.6;
+
+    featurePlaySoundButton.addEventListener('click', () => {
+      if (featurePlaySoundButton.classList.contains('desactive')) {
+        featurePlaySoundButton.classList.remove('desactive')
+        featurePlaySoundButton.classList.add('active')
+        featurePlaySoundButton.textContent = "Desligar o motor"
+        featureEngineSound.play()
+      } else {
+        featurePlaySoundButton.classList.remove('active')
+        featurePlaySoundButton.classList.add('desactive')
+        featurePlaySoundButton.textContent = "Ligar o motor"
+        featureEngineSound.pause()
+      }
+    })
+
+    featureEngineSound.addEventListener('ended', () => {
+      featurePlaySoundButton.textContent = "Ligar o motor"
+    })
+  }
 }
 
 function Budget() {
@@ -183,6 +221,27 @@ function Budget() {
   }
 }
 
+function NewsLetter() {
+  const newsletterInput = document.querySelector('.newsletter__form input[type="email"]')
+  const newsletterInputSubmit = document.querySelector('.newsletter__form input[type="submit"]')
+
+  this.start = () => {
+    this._newsLetterManager()
+  }
+
+  this._newsLetterManager = () => {
+    newsletterInputSubmit.addEventListener('click', () => {
+      
+      if (newsletterInput.value == '') {
+        new PopUp().renderPopUp('negative', 'Os campos devem ser preenchidos para enviar!')
+        return
+      }
+
+      new PopUp().renderPopUp('positive', 'Dados enviados com sucesso!')
+    })
+  }
+}
+
 function Footer() {
   this.start = () => {
     this._menuResponsiveManager()
@@ -214,12 +273,23 @@ function PopUp() {
       popupIconContainer.style.color = 'green'
       if (popupIconContainer.classList.contains('fa-times-circle'))
         popupIconContainer.classList.remove('fa-times-circle')
+      if (popupIconContainer.classList.contains('fa-bell'))
+        popupIconContainer.classList.remove('fa-bell')
       popupIconContainer.classList.add('fa-check-circle')
     } else if (type == 'negative') {
       popupIconContainer.style.color = 'red'
       if (popupIconContainer.classList.contains('fa-check-circle'))
         popupIconContainer.classList.remove('fa-check-circle')
+      if (popupIconContainer.classList.contains('fa-bell'))
+        popupIconContainer.classList.remove('fa-bell')
       popupIconContainer.classList.add('fa-times-circle')
+    } else {
+      popupIconContainer.style.color = 'black'
+      if (popupIconContainer.classList.contains('fa-times-circle'))
+        popupIconContainer.classList.remove('fa-times-circle')
+      if (popupIconContainer.classList.contains('fa-check-circle'))
+        popupIconContainer.classList.remove('fa-check-circle')
+      popupIconContainer.classList.add('fa-bell')
     }
 
     popupMessageContainer.innerHTML = text

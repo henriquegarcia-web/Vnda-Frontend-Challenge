@@ -13,6 +13,7 @@
 
 - Estilização em SASS, compilado para CSS com a extensão *Live Sass Compiler*
 - Padrão de código BEM
+- CDN: ícones pelo FontAwesome e Animações pelo Animate.css
 
 #### Features:
 
