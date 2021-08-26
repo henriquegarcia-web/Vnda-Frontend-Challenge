@@ -17,8 +17,6 @@
 
 #### Features:
 
-- Produtos das vitrines gerados por dados de um json
-- Como não havia definição no wireframe do '*full banner com slider*', adicionei slider à vitrine de produtos. Uma delas utilizando o swiper e outra utilizando uma biblioteca própria, que ainda está em desenvolvimento
 - Pop-up animado para informar sobre as ações na página
 - Seção de orçamento, simulando uma página de detalhe do produto
 - Botão '*Escute o som do motor*', onde é possível ouvir o motor da moto S1000RR

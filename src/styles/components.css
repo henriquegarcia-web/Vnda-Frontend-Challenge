@@ -118,7 +118,6 @@ button:hover, input[type="submit"]:hover {
 
 .section .section__left_container button {
   background-color: var(--grey-blue);
-  color: white;
   outline: 3px solid var(--grey-blue);
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -128,6 +127,10 @@ button:hover, input[type="submit"]:hover {
   padding: 15px 50px;
   -webkit-transition: .2s;
   transition: .2s;
+}
+
+.section .section__left_container button a {
+  color: white;
 }
 
 .section .section__left_container button:hover {

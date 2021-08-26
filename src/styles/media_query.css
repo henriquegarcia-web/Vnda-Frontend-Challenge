@@ -626,6 +626,13 @@
   .budget .container .budget__container__right .budget__form .budget__form__infos input[type="submit"] {
     width: 30%;
   }
+  .showcase .showcase__container .showcase__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .showcase .showcase__container .showcase__items .showcase__item {
+    width: 50% !important;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -758,6 +765,130 @@
     padding: 0 40px;
     width: 100%;
     margin: 50px 0;
+  }
+  .news .container .news__container {
+    max-height: 180px;
+  }
+  .news .container .news__container .news__container__small__image, .news .container .news__container .news__container__large__image {
+    width: 100%;
+    position: absolute;
+    opacity: 0.1;
+  }
+  .news .container .news__container .news__container__content {
+    width: 100%;
+    z-index: 1;
+  }
+  .news .container .news__container .news__container__content .news__container__title {
+    margin-bottom: 5px;
+  }
+  .budget .container .budget__container__right .budget__form p:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .budget .container .budget__container__right .budget__form p:nth-of-type(2) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .budget .container .budget__container__right .budget__form p:nth-of-type(3) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__price {
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .budget .container .budget__container__right .budget__form #select_motorcycle {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__variations {
+    margin-bottom: 20px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__variations .budget__form__variation {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .section .section__left_container p:nth-of-type(1) {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .section .section__left_container p:nth-of-type(2) {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .section .section__left_container button {
+    font-size: 16px;
+    padding: 8px 30px;
+  }
+  .showcase .showcase__container .showcase__items .showcase__item {
+    width: 100% !important;
+  }
+  .news .container .news__container {
+    max-height: 200px;
+    margin-bottom: 15px !important;
+  }
+  .budget .container .budget__container__right .budget__form p:nth-of-type(2) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .budget .container .budget__container__right .budget__form p:nth-of-type(3) {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__price {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .budget .container .budget__container__right .budget__form #select_motorcycle {
+    padding: 4px 8px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__variations .budget__form__variation {
+    padding: 4px 8px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__infos {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__infos input {
+    padding: 6px 10px;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__infos input[type="text"] {
+    width: 100%;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__infos input[type="number"] {
+    width: 100%;
+    margin-left: 0;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__infos input[type="email"] {
+    width: calc(70% - 10px);
+    margin-right: 10px;
+  }
+  .budget .container .budget__container__right .budget__form .budget__form__infos input[type="submit"] {
+    width: 30%;
+  }
+  .find-us .container .find-us__container__left p {
+    font-size: 16px;
+  }
+  .find-us .container .find-us__container__left p:nth-of-type(1) {
+    font-size: 20px;
+  }
+  .newsletter .container .newsletter__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .newsletter .container .newsletter__form input[type="email"] {
+    width: 100%;
+    margin: 0 0 5px 0;
+  }
+  .newsletter .container .newsletter__form input[type="submit"] {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=media_query.css.map */

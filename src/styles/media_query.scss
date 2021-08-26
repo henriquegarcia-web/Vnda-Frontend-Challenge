@@ -363,7 +363,6 @@
         font-size: 18px;
         margin-bottom: 40px;
       }
-  
       button {
         font-size: 16px;
         padding: 10px 40px;
@@ -813,7 +812,19 @@
     }
   }
 
+  .showcase {
+    .showcase__container {  
+      .showcase__items {
+        flex-wrap: wrap;
+      
+        .showcase__item {
+          width: 50% !important;
+        }
+      }
+    }
+  }
 }
+
 
 @media screen and (max-width: 680px) {
 
@@ -976,6 +987,191 @@
       padding: 0 40px;
       width: 100%;
       margin: 50px 0;
+    }
+  }
+
+  .news {
+    .container {  
+      .news__container {
+        max-height: 180px;
+
+        .news__container__small__image, .news__container__large__image {
+          width: 100%;
+          position: absolute;
+          opacity: 0.1;
+        }
+        .news__container__content {
+          width: 100%;
+          z-index: 1;
+          
+          .news__container__title {
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  .budget {
+    .container {
+      .budget__container__right {
+        .budget__form {
+          p:nth-of-type(1) {
+            font-size: 20px;
+          }
+          p:nth-of-type(2) {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+          p:nth-of-type(3) {
+            font-size: 18px;
+            margin-bottom: 15px;
+          }
+
+          .budget__form__price {
+            font-size: 24px;
+            margin-bottom: 25px;
+          }
+
+          #select_motorcycle {
+            font-size: 14px;
+            padding: 6px 8px;
+          }
+
+          .budget__form__variations {
+            margin-bottom: 20px;
+
+            .budget__form__variation {
+              font-size: 14px;
+              padding: 6px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .section {
+    .section__left_container {
+      p:nth-of-type(1) {
+        font-size: 18px;
+        margin-bottom: 14px;
+      }
+      p:nth-of-type(2) {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 8px 30px;
+      }
+    }
+  }
+
+  .showcase {
+    .showcase__container {  
+      .showcase__items {     
+        .showcase__item {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .news {
+    .container {  
+      .news__container {
+        max-height: 200px;
+        margin-bottom: 15px !important;
+      }
+    }
+  }
+
+  .budget {
+    .container { 
+      .budget__container__right {
+        .budget__form {
+          p:nth-of-type(2) {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+          p:nth-of-type(3) {
+            font-size: 16px;
+            margin-bottom: 10px;
+          }
+
+          .budget__form__price {
+            font-size: 24px;
+            margin-bottom: 20px;
+          }
+
+          #select_motorcycle {
+            padding: 4px 8px;
+          }
+
+          .budget__form__variations {
+            .budget__form__variation {
+              padding: 4px 8px;
+            }
+          }
+          .budget__form__infos {
+            justify-content: flex-end;
+
+            input {
+              padding: 6px 10px;
+              font-size: 14px;
+              margin-bottom: 5px;
+            }
+            input[type="text"] {
+              width: 100%;
+            }
+            input[type="number"] {
+              width: 100%;
+              margin-left: 0;
+            }
+            input[type="email"] {
+              width: calc(70% - 10px);
+              margin-right: 10px;
+            }
+            input[type="submit"] {
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .find-us {
+    .container {
+      .find-us__container__left {
+        p {
+         font-size: 16px;
+        }
+        p:nth-of-type(1) {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .newsletter {
+    .container { 
+      .newsletter__form {
+        flex-direction: column;
+
+        input[type="email"] {
+          width: 100%;
+          margin: 0 0 5px 0;
+        }
+        input[type="submit"] {
+          width: 100%;
+        }
+      }
     }
   }
 }

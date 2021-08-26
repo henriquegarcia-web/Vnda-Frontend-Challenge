@@ -97,13 +97,16 @@ button:hover, input[type="submit"]:hover {
 
     button {
       background-color: var(--grey-blue);
-      color: white;
       outline: 3px solid var(--grey-blue);
       width: fit-content;
       font-size: 20px;
       letter-spacing: 1px;
       padding: 15px 50px;
       transition: .2s;
+
+      a {
+        color: white;
+      }
     }
 
     button:hover {
@@ -209,7 +212,6 @@ button:hover, input[type="submit"]:hover {
           }
   
           .showcase__item__title {
-            // color: white;
             letter-spacing: 1px;
             font-size: 20px;
             text-align: center;
