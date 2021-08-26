@@ -3,7 +3,7 @@
 ###### Desafio para demonstração de habilidades.
 > **Desenvolvedor:** Henrique Pereira Garcia <br/>
 > **Data e hora de início:** 19/08/2021 às 21:50 <br/>
-> **Data e hora de término:** 
+> **Data e hora de término:** 26/08/2021 às 14:25
 
 #### Escopo:
 
@@ -29,3 +29,7 @@
 - Aplicação das funcionalidades JavaScript
 - Organização dos arquivos, performatização, adequações e melhorias
 - Revisão e entrega
+
+#### Notas:
+
+> Para disponibilizar a página no GitHub pages, teria de mudar a composição dos arquivos e links, então preferi deixar sem. Estou utilizando o Live Server para visualização.
