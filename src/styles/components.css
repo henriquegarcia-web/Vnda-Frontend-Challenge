@@ -215,10 +215,16 @@ button:hover, input[type="submit"]:hover {
 }
 
 .showcase .showcase__container .showcase__items .showcase__item .showcase__item__container .showcase__item__image {
-  background-color: cornflowerblue;
   position: relative;
   width: 100%;
   height: 380px;
+}
+
+.showcase .showcase__container .showcase__items .showcase__item .showcase__item__container .showcase__item__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .showcase .showcase__container .showcase__items .showcase__item .showcase__item__container .showcase__item__image .showcase__item__image__flag {
@@ -240,6 +246,12 @@ button:hover, input[type="submit"]:hover {
           transform: translateX(-50%);
   padding: 20px;
   font-size: 20px;
+}
+
+.showcase .showcase__container .showcase__items .showcase__item .showcase__item__container .showcase__item__image .showcase__item__image__price .showcase__item__image__discount {
+  font-size: 14px;
+  color: #797979;
+  text-decoration: line-through;
 }
 
 .showcase .showcase__container .showcase__items .showcase__item .showcase__item__container .showcase__item__title {

@@ -185,10 +185,15 @@ button:hover, input[type="submit"]:hover {
 
         .showcase__item__container {
           .showcase__item__image {
-            background-color: cornflowerblue;
             position: relative;
             width: 100%;
             height: 380px;
+
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
 
             .showcase__item__image__flag {
               position: absolute;
@@ -208,6 +213,12 @@ button:hover, input[type="submit"]:hover {
               transform: translateX(-50%);
               padding: 20px;
               font-size: 20px;
+
+              .showcase__item__image__discount {
+                font-size: 14px;
+                color: rgb(121, 121, 121);
+                text-decoration: line-through;
+              }
             }
           }
   
